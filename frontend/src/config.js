@@ -1,3 +1,3 @@
-const baseUrl = "http://localhost:5001";
+const baseUrl = "https://create-your-own-blog-backend.onrender.com/";
 
 export default baseUrl;
