@@ -11,6 +11,7 @@ const generateToken = async (userData, res) => {
         maxAge: 7 * 24 * 60 * 60 * 1000,
         secure: true,             
         sameSite: "None",
+        httpOnly: true,
     });
 
 }
