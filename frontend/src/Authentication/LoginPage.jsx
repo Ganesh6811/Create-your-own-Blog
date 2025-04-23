@@ -17,7 +17,7 @@ function Login() {
         };
 
         try {
-            const res = await axios.post(`${baseUrl}/api/auth/login`, data,{
+            const res = await axios.post(`${baseUrl}api/auth/login`, data,{
                 withCredentials:true,
             });
             console.log(res.data); 
