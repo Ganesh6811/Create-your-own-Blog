@@ -32,7 +32,7 @@ function App() {
     };
 
     checkUser();
-  }, [isAuthenticated]);
+  }, []);
 
   if (isAuthenticated == null) {
     return <p>Loading....</p>;
