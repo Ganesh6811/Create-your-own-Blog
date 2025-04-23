@@ -20,7 +20,7 @@ const Header = () => {
     }
 
     try {
-      const res = await axios.get(`${baseUrl}/api/posts/?query=${searchItem}`, {
+      const res = await axios.get(`${baseUrl}api/posts/?query=${searchItem}`, {
         withCredentials: true,
       });
 
