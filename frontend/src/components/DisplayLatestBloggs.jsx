@@ -18,7 +18,7 @@ const DisplayLatestBlogs = ({ searchedBlogs }) => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get(`${baseUrl}/api/posts/latestPosts`, {
+        const response = await axios.get(`${baseUrl}api/posts/latestPosts`, {
           withCredentials: true,
         });
 
@@ -49,7 +49,7 @@ const DisplayLatestBlogs = ({ searchedBlogs }) => {
   useEffect(() => {
     const checkUser = async () => {
       try {
-        const res = await axios.get(`${baseUrl}/api/auth/check`, {
+        const res = await axios.get(`${baseUrl}api/auth/check`, {
           withCredentials: true,
         });
 
@@ -72,7 +72,7 @@ const DisplayLatestBlogs = ({ searchedBlogs }) => {
   const handleLike = async (blogId) => {
     try {
       const res = await axios.post(
-        `${baseUrl}/api/posts/like/`,
+        `${baseUrl}api/posts/like/`,
         { blogId },
         { withCredentials: true }
       );
