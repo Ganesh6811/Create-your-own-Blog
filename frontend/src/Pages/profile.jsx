@@ -14,12 +14,12 @@ const Profile = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get(`${baseUrl}/api/posts/userData`, {
+                const response = await axios.get(`${baseUrl}api/posts/userData`, {
                     withCredentials: true,
                 });
                 setUserData(response.data);
 
-                const userPosts = await axios.get(`${baseUrl}/api/posts/userPosts`, {
+                const userPosts = await axios.get(`${baseUrl}api/posts/userPosts`, {
                     withCredentials: true,
                 });
 
@@ -36,7 +36,7 @@ const Profile = () => {
     }, []);
 
     const deleteBlog = async (postId) => {
-        const res = await axios.post(`${baseUrl}/api/posts/deleteBlog`, {
+        const res = await axios.post(`${baseUrl}api/posts/deleteBlog`, {
             postId,
         }, {
             withCredentials: true,
