@@ -20,7 +20,7 @@ function SignUp() {
         };
 
         try {
-            const res = await axios.post(`${baseUrl}/api/auth/signUp`, data);
+            const res = await axios.post(`${baseUrl}api/auth/signUp`, data);
             console.log(res.data);
             navigate("/");
         }
