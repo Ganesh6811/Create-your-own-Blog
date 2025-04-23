@@ -34,7 +34,7 @@ function Login() {
             className="d-flex justify-content-center align-items-center vh-100"
             style={{
                 backgroundColor: "#121212",
-                backgroundImage: "url('/your-dark-theme-image.png')", 
+                // backgroundImage: "url('/your-dark-theme-image.png')", 
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
