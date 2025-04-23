@@ -28,8 +28,8 @@ app.use(cors({
 
 
 
-app.use("api/auth/", AuthRoute);
-app.use("api/posts/", PostsRoute);
+app.use("/api/auth/", AuthRoute);
+app.use("/api/posts/", PostsRoute);
 
 app.listen(port, ()=>{
     console.log(`Server is working on port ${port}`);
