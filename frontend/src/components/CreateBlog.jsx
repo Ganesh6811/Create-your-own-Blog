@@ -26,7 +26,7 @@ const CreateBlog = () => {
 
     try {
       const res = await axios.post(
-        `${baseUrl}/api/posts/createPost`,
+        `${baseUrl}api/posts/createPost`,
         {
           title,
           content,
