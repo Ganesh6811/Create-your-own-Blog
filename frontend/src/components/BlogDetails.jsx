@@ -11,7 +11,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.post(`${baseUrl}/api/posts/blogDetails`, {
+        const res = await axios.post(`${baseUrl}api/posts/blogDetails`, {
           blogId: id,
         }, {
           withCredentials: true,
