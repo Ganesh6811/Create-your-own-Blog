@@ -22,6 +22,7 @@ function Login() {
             });
             console.log(res.data); 
             navigate("/");
+            window.location.reload();
         }
         catch (err) {
             console.log("Login Failed:", err);
