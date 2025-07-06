@@ -23,6 +23,7 @@ function SignUp() {
             const res = await axios.post(`${baseUrl}api/auth/signUp`, data);
             console.log(res.data);
             navigate("/");
+            window.location.reload();
         }
         catch (err) {
             console.log("Registration Failed:", err);
